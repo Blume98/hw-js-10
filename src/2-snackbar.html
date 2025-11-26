@@ -8,21 +8,35 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-curr="active"
-    />
-
     <main>
       <div class="container">
         <h1 class="main-title">
           <span class="main-title-gradient">Welcome</span> to Snackbar
         </h1>
-        <load src="./partials/back-link.html" />
       </div>
-    </main>
+      <form class="form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
 
-    <load src="./partials/footer.html" />
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Create notification</button>
+      </form>
+
+      <a href="./index.html" class="back-link">Go back</a>
+    </main>
   </body>
+  <script type="module" src="./js/2-snackbar.js"></script>
 </html>

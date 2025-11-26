@@ -27,3 +27,23 @@
   opacity: 1;
   animation-play-state: running;
 }
+
+.container-link-pages {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.link-pages {
+  padding: 35px 80px;
+  background: #7890fa;
+  background: radial-gradient(
+    circle,
+    rgba(120, 144, 250, 1) 31%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
